@@ -43,6 +43,17 @@ module ContractsHelper
   puts c.response_code
   puts JSON::parse(c.body)
     end
+    
+    def change_recipients 
+         h = {
+    signers: { roleName: 'Agent', email: 'alizee.albrecht17@gmail.com', name: 'Agent Name', recipientId: '1' }
+    }
+    c = @api.put '/envelopes/123/recipients', h.to_json
+
+    puts c.response_code
+    puts JSON::parse(c.body)
+    end
+  
 end
  
 
