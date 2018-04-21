@@ -26,7 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # integrations
 gem 'podio'
 gem 'docusign_esign'
-
+gem 'docusign_api'
+gem 'curb'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
